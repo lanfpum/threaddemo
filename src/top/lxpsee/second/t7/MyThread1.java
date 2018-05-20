@@ -1,0 +1,19 @@
+package top.lxpsee.second.t7;
+
+/**
+ * 努力常态化  2018/5/20 21:15
+ */
+public class MyThread1 extends Thread {
+    private Task task;
+
+    public MyThread1(Task task) {
+        super();
+        this.task = task;
+    }
+
+    @Override
+    public void run() {
+        super.run();
+        task.doLongTimeTask();
+    }
+}
